@@ -355,6 +355,8 @@ div.card {
 
 /* about robbie */
 .content {
+     margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     gap: 14px;
@@ -379,18 +381,20 @@ p {
 }
 
 .box1 {
-    width: 430px;
+    width: 350px;
     height: 490px;
 }
 
 .box2 {
-    width: 530px;
-    height: 280px;
-    padding: 5%;
+    width: 350px;
+    height: 250px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .mid-part {
-    padding: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     width: 100%;
 }
 
