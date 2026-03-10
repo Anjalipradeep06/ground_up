@@ -1,0 +1,336 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=tel],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none !important;
+    outline-style: none;
+}
+
+input:focus-visible {
+    outline-width: 0px;
+}
+
+textarea:focus-visible {
+    outline-width: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+/* ----------Styling---------- */
+
+/* fonts poppins  */
+@font-face {
+    font-family: gilroy-regular;
+    src: url(../fonts/gilroy-bold-cufonfonts/Gilroy-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url(fonts/gilroy-bold-cufonfonts/Gilroy-Medium.ttf);
+}
+
+/* ================================== */
+
+
+
+
+
+.container {
+    /* padding: 0px 15px; */
+    max-width: 1610px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 54px;
+    font-family: gilroy-medium;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    /* border: 2px solid black; */
+}
+
+.logo img {
+    width: 270px;
+    height: 71px;
+}
+
+div.dropdown-contents ul {
+    /* display: flex; */
+    gap: 65px;
+    list-style: none;
+
+
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+   
+    list-style: none;
+    /* padding: 10px 0; */
+    min-width: 130px;
+    
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    cursor: pointer;
+      padding-top: 15px;
+     padding-left: 25px;
+}
+
+.training-dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+   
+    list-style: none;
+    /* padding: 10px 0; */
+    min-width: 250px;
+    padding-left: 15%;
+    
+}
+.training-dropdown:hover .training-dropdown-menu{
+    display: block;
+    cursor: pointer;
+}
+
+.down-arrow {
+    position: relative;
+}
+
+.arrow-image img {
+    position: absolute;
+    left: 70px;
+    bottom: 5px;
+
+}
+
+
+.footer {
+    background-color: #05A93D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    height: 412px;
+}
+
+.footer-logo img {
+    width: 229px;
+    height: 64px;
+
+}
+
+.footer-list ul {
+    display: flex;
+    list-style: none;
+    color: #FFFFFF;
+    width: 554px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: gilroy-medium;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.icon {
+    width: 37px;
+    height: 36px;
+    background-color: #F67C01;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.media {
+    width: 15px;
+    height: 18px;
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #FFFFFF;
+    padding-top: 30;
+    font-family: gilroy-medium;
+    text-align: center;
+
+}
+
+hr {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .container {
+        /* padding: 0px 15px; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 71px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4%;
+        gap: 2%;
+        font-family: gilroy-medium;
+        font-size: 16px;
+        color: #777777;
+        margin: 0 auto;
+        width: 100%;
+
+
+    }
+
+    div.dropdown-contents ul {
+        gap: 35px;
+        list-style: none;
+        font-family: gilroy-medium;
+
+    }
+ 
+
+.dropdown:hover .dropdown-menu {
+    position: relative;
+    display: block;
+    cursor: pointer;
+      padding-top: 2px;
+     padding-left: 25px;
+     left: 85px;
+}
+
+.training-dropdown:hover .training-dropdown-menu {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    left: 85px;
+}
+
+}
